@@ -1,0 +1,595 @@
+<%- include header %>
+        <script src="js/js-image-slider.js" type="text/javascript"></script>
+        <div class="banner-section">
+            <div class="container">
+                <div class="col-md-6 col-sm-6 col-xs-6 mgt3">
+                    <div>
+                        <div class="textwidget">
+                            <p class="main_heading">Latgest Cryptocurrency</p>
+                            <p class="second_font">Exchange Trading Platform</p>
+                            <p class="small_font">We offers institutions and professionals the ability to trade a variety of     digital currencies like Bitcoin classic, Ethereum, Dash, XRP and many more.</p>
+                            <p class="">
+                                <a href="">
+                                    <button class="btn btn-default btn-lg btn-started" type="button"><i class="fa fa-sign-in"></i> Get Started</button>
+                                </a>
+                                <a href="">
+                                    <button class="btn btn-danger btn-lg btn-exchange" type="button"><i class="fa fa-exchange"></i> Exchange</button>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div id="sliderFrame">
+                        <div id="slider">
+                            <a href="#"><img src="images/original.jpg" alt="" /></a>
+                            <a href="#"><img src="images/original_1.jpg" alt="" /></a>
+                            <a href="#"><img src="images/original_2.jpg" alt="" /></a>
+                            <a href="#"><img src="images/original_3.jpg" alt="" /></a>
+                            <a href="#"><img src="images/original_4.jpg" alt=""/></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+      
+        <script src="js/jssor.slider.min.js" type="text/javascript"></script>
+        <script type="text/javascript">            
+            jssor_1_slider_init = function() {                
+                var jssor_1_options = {
+                  $AutoPlay: 1,
+                  $Idle: 0,
+                  $SlideDuration: 5000,
+                  $SlideEasing: $Jease$.$Linear,
+                  $PauseOnHover: 4,
+                  $SlideWidth: 230,
+                  $Align: 0
+                };
+
+                var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+                /*#region responsive code begin*/
+
+                var MAX_WIDTH = 1440;
+
+                function ScaleSlider() {
+                    var containerElement = jssor_1_slider.$Elmt.parentNode;
+                    var containerWidth = containerElement.clientWidth;
+
+                    if (containerWidth) {
+
+                        var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                        jssor_1_slider.$ScaleWidth(expectedWidth);
+                    }
+                    else {
+                        window.setTimeout(ScaleSlider, 30);
+                    }
+                }
+
+                ScaleSlider();
+
+                $Jssor$.$AddEvent(window, "load", ScaleSlider);
+                $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+                $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+                /*#endregion responsive code end*/
+            };
+        </script>
+      
+        <section class="price_ticker">
+            <div id="jssor_1" class="jssor_1">
+                <div data-u="slides" class="ticker_section">
+                    <div class="currency">
+                        <p>
+                            <span class="cimg">
+                                <img src="images/1.png"/>
+                            </span>
+                            <span class="cdetails">
+                                <span class="cname">BTC <span class="gprice"><i class="fa fa-arrow-down"></i> 2.14%</span></span>
+                                <span class="price">$168.3</span>
+                            </span>
+                            
+                        </p>
+                    </div>
+                    <div class="currency">
+                        <p>
+                            <span class="cimg">
+                                <img src="images/2.png"/>
+                            </span>
+                            <span class="cdetails">
+                                <span class="cname">BTC <span class="gprice"><i class="fa fa-arrow-down"></i> 2.14%</span></span>
+                                <span class="price">$168.3</span>
+                            </span>
+                            
+                        </p>
+                    </div>
+                    <div class="currency">
+                        <p>
+                            <span class="cimg">
+                                <img src="images/3.png"/>
+                            </span>
+                            <span class="cdetails">
+                                <span class="cname">BTC <span class="gprice"><i class="fa fa-arrow-down"></i> 2.14%</span></span>
+                                <span class="price">$168.3</span>
+                            </span>
+                            
+                        </p>
+                    </div>
+                    <div class="currency">
+                        <p>
+                            <span class="cimg">
+                                <img src="images/4.png"/>
+                            </span>
+                            <span class="cdetails">
+                                <span class="cname">BTC <span class="rprice"><i class="fa fa-arrow-down"></i> 2.14%</span></span>
+                                <span class="price">$168.3</span>
+                            </span>
+                            
+                        </p>
+                    </div>
+                    <div class="currency">
+                        <p>
+                            <span class="cimg">
+                                <img src="images/5.png"/>
+                            </span>
+                            <span class="cdetails">
+                                <span class="cname">ETH <span class="rprice"><i class="fa fa-arrow-down"></i> 2.14%</span></span>
+                                <span class="price">$168.3</span>
+                            </span>
+                            
+                        </p>
+                    </div>
+                    <div class="currency">
+                        <p>
+                            <span class="cimg">
+                                <img src="images/6.png"/>
+                            </span>
+                            <span class="cdetails">
+                                <span class="cname">LTC <span class="gprice"><i class="fa fa-arrow-down"></i> 2.14%</span></span>
+                                <span class="price">$168.3</span>
+                            </span>
+                            
+                        </p>
+                    </div>
+                    <div class="currency">
+                        <p>
+                            <span class="cimg">
+                                <img src="images/7.png"/>
+                            </span>
+                            <span class="cdetails">
+                                <span class="cname">BCH <span class="rprice"><i class="fa fa-arrow-down"></i> 2.14%</span></span>
+                                <span class="price">$168.3</span>
+                            </span>
+                            
+                        </p>
+                    </div>
+                    <div class="currency">
+                        <p>
+                            <span class="cimg">
+                                <img src="images/8.png"/>
+                            </span>
+                            <span class="cdetails">
+                                <span class="cname">BTC <span class="gprice"><i class="fa fa-arrow-down"></i> 2.14%</span></span>
+                                <span class="price">$168.3</span>
+                            </span>
+                            
+                        </p>
+                    </div>
+                    <div class="currency">
+                        <p>
+                            <span class="cimg">
+                                <img src="images/9.png"/>
+                            </span>
+                            <span class="cdetails">
+                                <span class="cname">BTC <span class="rprice"><i class="fa fa-arrow-down"></i> 2.14%</span></span>
+                                <span class="price">$168.3</span>
+                            </span>
+                            
+                        </p>
+                    </div>
+                    <div class="currency">
+                        <p>
+                            <span class="cimg">
+                                <img src="images/10.png"/>
+                            </span>
+                            <span class="cdetails">
+                                <span class="cname">BTC <span class="rprice"><i class="fa fa-arrow-down"></i> 2.14%</span></span>
+                                <span class="price">$168.3</span>
+                            </span>
+                            
+                        </p>
+                    </div>
+                    <div class="currency">
+                        <p>
+                            <span class="cimg">
+                                <img src="images/11.png"/>
+                            </span>
+                            <span class="cdetails">
+                                <span class="cname">DASH <span class="gprice"><i class="fa fa-arrow-down"></i> 2.14%</span></span>
+                                <span class="price">$168.3</span>
+                            </span>
+                            
+                        </p>
+                    </div>
+                    <div class="currency">
+                        <p>
+                            <span class="cimg">
+                                <img src="images/12.png"/>
+                            </span>
+                            <span class="cdetails">
+                                <span class="cname">BTC <span class="gprice"><i class="fa fa-arrow-down"></i> 2.14%</span></span>
+                                <span class="price">$168.3</span>
+                            </span>
+                            
+                        </p>
+                    </div>
+                    <div class="currency">
+                        <p>
+                            <span class="cimg">
+                                <img src="images/13.png"/>
+                            </span>
+                            <span class="cdetails">
+                                <span class="cname">BTC <span class="gprice"><i class="fa fa-arrow-down"></i> 2.14%</span></span>
+                                <span class="price">$168.3</span>
+                            </span>
+                            
+                        </p>
+                    </div>
+                    <div class="currency">
+                        <p>
+                            <span class="cimg">
+                                <img src="images/14.png"/>
+                            </span>
+                            <span class="cdetails">
+                                <span class="cname">BTC <span class="gprice"><i class="fa fa-arrow-down"></i> 2.14%</span></span>
+                                <span class="price">$168.3</span>
+                            </span>
+                            
+                        </p>
+                    </div>
+                    <div class="currency">
+                        <p>
+                            <span class="cimg">
+                                <img src="images/15.png"/>
+                            </span>
+                            <span class="cdetails">
+                                <span class="cname">BTC <span class="gprice"><i class="fa fa-arrow-down"></i> 2.14%</span></span>
+                                <span class="price">$168.3</span>
+                            </span>
+                            
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+        <script type="text/javascript">jssor_1_slider_init();</script>
+      
+      
+
+        <section id="about_us" class="about_us" style="background-image: url('images/bg.png');">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                            <!--<div class="square1"></div>
+                            <div class="square2"></div> -->
+                            <div class="crypto_move">
+                                <img src="images/circle_move.png">
+                                <!--<p><img src="images/bitcoin.png"></p>-->
+                            </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="heading-left">
+                            <h3>Why Choose Us</h3>
+                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        </div>
+                        
+                        <div class="iq-feature3 iq-mt-30">
+                            <div class="iq-icon yellow-bg">
+                                <i aria-hidden="true" class="fa fa-globe"></i>
+                            </div>
+                            <div class="fancy-content">
+                                <h5 class="iq-tw-5">No Central Authority</h5>
+                                <p>Lorem ipsum madolor sit, consectetur adipisicing elit, eiusmod tempor sicing elit, eiusmod tempor.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="iq-feature3 iq-mt-30">
+                            <div class="iq-icon yellow-bg">
+                                <i aria-hidden="true" class="fa fa-database"></i>
+                            </div>
+                            <div class="fancy-content">
+                                <h5 class="iq-tw-5">Completely Decentralized</h5>
+                                <p>Lorem ipsum madolor sit, consectetur adipisicing elit, eiusmod tempor sicing elit, eiusmod tempor.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="iq-feature3 iq-mt-30">
+                            <div class="iq-icon yellow-bg">
+                                <i aria-hidden="true" class="fa fa-share-alt"></i>
+                            </div>
+                            <div class="fancy-content">
+                                <h5 class="iq-tw-5">Peer-to-Peer Network</h5>
+                                <p>Lorem ipsum madolor sit, consectetur adipisicing elit, eiusmod tempor sicing elit, eiusmod tempor.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+      
+        <section id="how_it_works" class="how_it_works" style="background-image: url('images/bg-4.jpg'); background-attachment: fixed">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="heading-title">
+                            <h3 class="title iq-tw-5 iq-mb-20 iq-font-white">How Do Crypto Exchange Work?</h3>
+                            <p class="iq-font-white">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-4 col-sm-4">
+                        <div class="iq-feature4">
+                            <div class="iq-Work-box text-center iq-font-white stap-up">
+                                <div class="Work-icon">
+                                    <div class="step">1</div>
+                                    <i aria-hidden="true" class="fa fa-sign-in"></i>
+                                </div>
+                                <h4 class="iq-tw-4 iq-mt-20 iq-font-yellow">Register on our site</h4>
+                                <p class="iq_text">Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 col-sm-4">
+                        <div class="iq-feature4">
+                            <div class="iq-Work-box text-center iq-font-white stap-up">
+                                <div class="Work-icon">
+                                    <div class="step">1</div>
+                                    <i aria-hidden="true" class="fa fa-user"></i>
+                                </div>
+                                <h4 class="iq-tw-4 iq-mt-20 iq-font-yellow">Confirm your Account</h4>
+                                <p class="iq_text">Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 col-sm-4">
+                        <div class="iq-feature4">
+                            <div class="iq-Work-box text-center iq-font-white">
+                                <div class="Work-icon">
+                                    <div class="step">1</div>
+                                    <i aria-hidden="true" class="fa fa-exchange"></i>
+                                </div>
+                                <h4 class="iq-tw-4 iq-mt-20 iq-font-yellow">Start Exchange Now</h4>
+                                <p class="iq_text">Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+      
+      
+        <section class="our-features section-padding">
+            <div class="container">
+                <div class="col-md-12 text-center">
+                    <div class="row">
+                        <h2 id="hero-reason">
+                        Crypto Exchange Features
+                        </h2>
+                        <p>Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+                    </div>
+                    <div class="row mtb hidden-sm hidden-xs">
+                        <div class="col-md-4 col-sm-12">
+                            <div class="square1"></div>
+                            <div class="square2">
+                                <div class="feature-icon">
+                                    <i aria-hidden="true" class="fa fa-lock"></i>
+                                </div>
+                                <h3>Fast & Secure</h3>
+                                <p>Lorem Ipsum has been the industry's standard</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 col-sm-12">
+                            <div class="square1"></div>
+                            <div class="square2">
+                                <div class="feature-icon">
+                                    <i aria-hidden="true" class="fa fa-hand-o-right"></i>
+                                </div>
+                                <h3>Ease of Access</h3>
+                                <p>Lorem Ipsum has been the industry's standard</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 col-sm-12">
+                            <div class="square1"></div>
+                            <div class="square2">
+                                <div class="feature-icon">
+                                    <i aria-hidden="true" class="fa fa-exchange"></i>
+                                </div>
+                                <h3>Coin Exchange</h3>
+                                <p>Lorem Ipsum has been the industry's standard</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row mtb hidden-lg hidden-md mobile_features">
+                        <div class="col-md-4 col-sm-12">
+                            <div class="square2">
+                                <div class="feature-icon">
+                                    <i aria-hidden="true" class="fa fa-lock"></i>
+                                </div>
+                                <h3>Fast & Secure</h3>
+                                <p>Lorem Ipsum has been the industry's standard</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 col-sm-12">
+                            <div class="square2">
+                                <div class="feature-icon">
+                                    <i aria-hidden="true" class="fa fa-hand-o-right"></i>
+                                </div>
+                                <h3>Ease of Access</h3>
+                                <p>Lorem Ipsum has been the industry's standard</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 col-sm-12">
+                            <div class="square2">
+                                <div class="feature-icon">
+                                    <i aria-hidden="true" class="fa fa-exchange"></i>
+                                </div>
+                                <h3>Coin Exchange</h3>
+                                <p>Lorem Ipsum has been the industry's standard</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+      
+      
+        <section class="hero-strip section-padding">
+            <div class="container">
+                <div class="col-md-12 text-center">
+                    <h2 id="hero-reason">
+                    Everything You Need To Know! Which currencies we supports?
+                    </h2>
+                    <p>Crypto Exchange currently supports about 50 crypto currencies/coins (including 1 fiat currency) such as Bitcoin, Bitcoin Cash, Bitcoin Gold, Dash, Decred, Ethereum, Ethereum Classic, Litecoin, Vertcoin plus more Ethereum powered asset tokens including 0x, Aragon, Augur, Metal, Numeraire, OmiseGo, SALT, etc.</p>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="col-md-12 text-center">
+                    <div class="coin-placeholder">
+                        <img src="images/1.png"/> <img src="images/2.png"/> <img src="images/3.png"/> <img src="images/4.png"/> <img src="images/5.png"/> <img src="images/6.png"/> <img src="images/7.png"/> <img src="images/8.png"/> <img src="images/9.png"/> <img src="images/10.png"/> <img src="images/11.png"/> <img src="images/12.png"/> <img src="images/13.png"/> <img src="images/14.png"/> <img src="images/15.png"/> 
+                    </div>
+                </div>
+                
+                <!--<div class="col-md-12">
+                    <button type="button" class="btn btn-primary">Get Started Now</button>
+                </div>-->
+            </div>
+        </section>
+      
+      
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
+        <script>		
+            $(document).ready(function() {
+                var content = $('.content');
+
+                $('#trigger').live('click', function() {
+                    $(this).toggle(function() {
+                        $(this).text('hide follow!');
+                        content.removeClass('reverse').addClass('running');
+                    }, function() {
+                         $(this).text('follow me!');
+                        content.removeClass('running').addClass('reverse');
+                    }).trigger('click');
+                });
+
+            });
+        </script>
+      
+        <section class="follow">
+            <div class="container">
+                <h2>Follow Us On</h2>
+                <div class="content">
+                    <div class="ID-Image">
+
+                        <ul id="follow">
+
+                            <li class="line1">
+                            <span id="layerBall" class="ball"></span><span id="layerPulse" class="pulse"></span>
+                            </li>
+
+
+                            <li class="line2">
+                            <span id="layerBall1" class="ball1"></span><span id="layerPulse1" class="pulse1"></span>
+                            </li>
+
+                            <li class="line3">
+                            <span id="layerBall2" class="ball2"></span><span id="layerPulse2" class="pulse2"></span>
+                            </li>
+
+                            <li class="line4">
+                            <span id="layerBall3" class="ball3"></span><span id="layerPulse3" class="pulse3"></span>
+                            </li>
+                        </ul>
+
+                        <ul id="social">
+                            <li id="layerSocialControl3" class="facebook"><a href="#">Facebook</a></li>
+                            <li id="layerSocialControl2" class="twitter"><a href="#">Twitter</a></li>
+                            <li id="layerSocialControl" class="linked"><a href="#">Linked In</a></li>
+                            <li id="layerSocialControl1" class="forrst"><a href="#">Forrst</a></li>
+                        </ul>
+
+                    </div>
+
+                    <button class="btn btn-primary" id="trigger">Follow Me!</button>
+                </div>
+            </div>
+        </section>
+      
+      
+        <section id="how-to-start">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 section-header text-center">
+                        <h3 class="section-title underline">Benefits of Crypto Exchange</h3>
+                        <p class="section-subtitle">Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+                    </div> <!-- end section-header -->
+
+                    <div class="col-md-12">
+                        <div class="timeline-center">
+                            <div class="timeline-row">
+                                <div class="tm-detail">
+                                    <h5 class="mb10">Crypto Currencies Exchange</h5>
+                                    <p>The exchange will contain about 50 coins (including 1 fiat currency)</p>
+                                </div>
+                                <div class="tm-icon">
+                                    <span><i class="fa fa-exchange"></i></span>
+                                </div>
+                            </div> <!-- end timeline-row -->
+                            <div class="timeline-row">
+                                <div class="tm-detail">
+                                    <h5 class="mb10">Liquidity solution</h5>
+                                    <p>Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+                                </div>
+                                <div class="tm-icon">
+                                    <span><i class="fa fa-book"></i></span>
+                                </div>
+                            </div> <!-- end timeline-row -->
+                            <div class="timeline-row">
+                                <div class="tm-detail">
+                                    <h5 class="mb10">Security solutions</h5>
+                                    <p>Will provide security like 2 factor authentication and identity verification after a certain limit</p>
+                                </div>
+                                <div class="tm-icon">
+                                    <span><i class="fa fa-shield"></i></span>
+                                </div>
+                            </div> <!-- end timeline-row -->
+                            <div class="timeline-row">
+                                <div class="tm-detail">
+                                    <h5 class="mb10">Wallet Setup &amp; Coin Drop</h5>
+                                    <p>Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+                                </div>
+                                <div class="tm-icon">
+                                    <span class="fa fa-usd"></span>
+                                </div>
+                            </div> <!-- end timeline-row -->
+                        </div> <!-- end timeline-center -->
+                    </div> <!-- end col-md-12 -->
+
+                </div> <!-- end row -->
+            </div>
+        </section>
+<%- include footer %>
